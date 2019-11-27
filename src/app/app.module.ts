@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     NavBarComponent,
     HomePageComponent,
     AboutUsComponent,
+    MissionStatementComponent,
 
   ],
   imports: [
