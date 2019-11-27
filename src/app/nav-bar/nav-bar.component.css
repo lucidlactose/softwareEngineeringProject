@@ -1,0 +1,16 @@
+.brand{
+    color: #2cb000;
+}
+.nav-link{
+    color: black;
+}
+
+img{
+    background-image: url("../../assets/greenbookLogo.png");
+    height: 10vh;
+
+    /* max-width:100%; */
+    background-size:100% 100%;
+    margin: auto;
+    background-repeat: no-repeat;
+}
