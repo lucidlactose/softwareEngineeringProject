@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Brand Name works as home button -->
+    <a class="navbar-brand" routerLink =''>
+      <div>WØŁF</div>
+      <div>PÄCK</div>
+    </a>
+  <!-- If user is on a mobile device the menue will change from tabs to a drop down -->
+    <button class="navbar-toggler" type="button"
+            (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse"
+         [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink ='/products'>Products</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink ='/cart-page'>Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink ='/Sign-In'>Sign In</a>
+        </li>
+      </ul>
+    </div>
+</nav>
