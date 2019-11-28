@@ -1,10 +1,14 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ProfilePageComponent} from './profile-page/profile-page.component'
-import { EmployeesPageComponent} from './employees-page/employees-page.component'
-import {DashboardInventoryComponent} from './dashboard-inventory/dashboard-inventory.component'
-import {DashboardArchivesComponent} from './dashboard-archives/dashboard-archives.component'
-import {DashboardSettingsComponent} from './dashboard-settings/dashboard-settings.component'
+
+import { ProfilePageComponent} from './profile-page/profile-page.component';
+import { EmployeesPageComponent} from './employees-page/employees-page.component';
+import {DashboardInventoryComponent} from './dashboard-inventory/dashboard-inventory.component';
+import {DashboardArchivesComponent} from './dashboard-archives/dashboard-archives.component';
+import {DashboardSettingsComponent} from './dashboard-settings/dashboard-settings.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 
 
 const routes: Routes = [
@@ -12,10 +16,15 @@ const routes: Routes = [
   {path: 'employeePage', component: EmployeesPageComponent},
   {path: 'inventoryPage', component: DashboardInventoryComponent},
   {path: 'archivesPage', component: DashboardArchivesComponent},
-  {path: 'settingsPageDashboard', component: DashboardSettingsComponent}
+  {path: 'settingsPageDashboard', component: DashboardSettingsComponent},
+  {path:'', component: HomePageComponent},
+  {path:'aboutUs', component:AboutUsComponent},
+  {path:'missionStatement',component:MissionStatementComponent}
+  ];
 
 
-];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
