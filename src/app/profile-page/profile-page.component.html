@@ -1,6 +1,6 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+<!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 <!-- ---- Include the above in your HEAD tag -------- -->
 
 <nav class="navbar navbar-default navbar-static-top">
@@ -13,7 +13,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" routerLink='/profilePage'>Greenbook</a>
+			<a class="navbar-brand flex-column" routerLink='/profilePage'>Greenbook</a>
 		</div>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown ">
@@ -24,12 +24,12 @@
 </nav>
 	<div class="container-fluid main-container">
 		<div class="col-md-2 sidebar">
-			<ul class="nav nav-pills nav-stacked">
-				<li class="active"><a routerLink='/profilePage'>Home</a></li>
-				<li><a routerLink='/employeePage'>Employees</a></li>
-				<li><a routerLink='/inventoryPage'>Inventory</a></li>
-				<li><a routerLink='/archivesPage'>Archives</a></li>
-				<li><a routerLink='/settingsPageDashboard'>Settings</a></li>
+			<ul class="nav nav-pills flex-column">
+				<li class="active nav-item"><a routerLink='/profilePage'>Home</a></li>
+				<li class="nav-item"><a routerLink='/employeePage'>Employees</a></li>
+				<li class="nav-item"><a routerLink='/inventoryPage'>Inventory</a></li>
+				<li class="nav-item"><a routerLink='/archivesPage'>Archives</a></li>
+				<li class="nav-item"><a routerLink='/settingsPageDashboard'>Settings</a></li>
 			</ul>
 		</div>
 		<div class="col-md-10 content">
