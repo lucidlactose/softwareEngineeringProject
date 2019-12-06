@@ -24,7 +24,7 @@ import { MissionStatementComponent } from './mission-statement/mission-statement
     EmployeesPageComponent,
     DashboardInventoryComponent,
     DashboardArchivesComponent,
-    DashboardSettingsComponent
+    DashboardSettingsComponent,
     NavBarComponent,
     HomePageComponent,
     AboutUsComponent,

@@ -33,3 +33,7 @@ a {
 .navbar-default .navbar-nav>li>a {
     color: black;
 }
+.navbar-brand{
+    color: #2CB000;
+
+}
