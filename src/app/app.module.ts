@@ -8,6 +8,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MissionStatementComponent } from './mission-statement/mission-statement.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { MissionStatementComponent } from './mission-statement/mission-statement
     HomePageComponent,
     AboutUsComponent,
     MissionStatementComponent,
+    ContactUsComponent,
+    LogInComponent,
 
   ],
   imports: [
