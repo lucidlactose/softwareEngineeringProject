@@ -8,12 +8,12 @@
 	<ul class="navbar-nav mr-auto">
 		<li class ="nav-item">
 				<a class="navbar-brand" routerLink='/profilePage'>Greenbook</a>
-		</li>			
+		</li>
 	</ul>
 	<ul class="navbar-nav ml-auto">
 			<li class ="nav-item">
 				<a class="navbar-brand" routerLink='#'>Logout</a>
-			</li>			
+			</li>
 	</ul>
 </nav>
 	<div class="container-fluid main-container">
@@ -26,13 +26,40 @@
 				<li class="nav-item"><a routerLink='/settingsPageDashboard'>Settings</a></li>
 			</ul>
 		</div>
+
+
+<!--    <div>search bar, by default show everything. If you search, show that specific employee</div>-->
+
 		<div class="col-md-10 content">
-				<div class="panel panel-default">
-					<div class="panel-heading">
+      <div class="panel panel-default">
+        <div class="panel-heading">
 						Employees
 					</div>
 					<div class="panel-body">
-						<h1>This is Employees</h1>
+            <form (submit)="onSubmit()" >
+              <input [(ngModel)]="employeeName" type="text" placeholder="Find Employee" name="employee" />
+              <button>Submit</button>
+            </form>
+
+            <table class="table table-bordered table-striped">
+              <thead class="thead-dark">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Salary</th>
+                <th scope="col"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let employee of employees ">
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.salary }}</td>
+                <td>
+                  <button> Delete  </button>
+                  <button> Update </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
 					</div>
 				</div>
 			</div>

@@ -11,6 +11,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LogInComponent } from './log-in/log-in.component';
+import {UserListComponent} from './user-list/user-list.component';
 
 
 const routes: Routes = [
@@ -19,11 +20,12 @@ const routes: Routes = [
   {path: 'inventoryPage', component: DashboardInventoryComponent},
   {path: 'archivesPage', component: DashboardArchivesComponent},
   {path: 'settingsPageDashboard', component: DashboardSettingsComponent},
-  {path:'', component: HomePageComponent},
-  {path:'aboutUs', component:AboutUsComponent},
-  {path:'missionStatement',component:MissionStatementComponent},
-  {path:'contactUs',component:ContactUsComponent},
-  {path:'logIn',component:LogInComponent}
+  {path: '', component: HomePageComponent},
+  {path: 'aboutUs', component: AboutUsComponent},
+  {path: 'missionStatement', component: MissionStatementComponent},
+  {path: 'contactUs', component: ContactUsComponent},
+  {path: 'logIn', component: LogInComponent},
+  {path: 'users', component: UserListComponent}
 ];
 
 

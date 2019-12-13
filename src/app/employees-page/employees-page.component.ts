@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Employee } from '../model/employee';
+import {EmployeeService} from '../Services/employee.service';
 
 @Component({
   selector: 'app-employees-page',
@@ -7,9 +9,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeesPageComponent implements OnInit {
 
-  constructor() { }
+  private employees: Employee[];
+  employeeName: string;
 
-  ngOnInit() {
+  constructor(private employeeService: EmployeeService) {
   }
 
+  ngOnInit() {
+    this.employeeService.getAllEmployees().subscribe((res: Employee[]) => {
+      this.employees = res;
+    });
+  }
+
+  getEmployeeName() {
+    return this.employeeName;
+  }
+
+  onSubmit() {
+    const some = this.getEmployeeName();
+
+    this.employees.forEach((e) => {
+      if (e.name == some) {
+      }
+    });
+
+    console.log();
+    return this.employeeName;
+  }
+
+  findEmployee = () => {
+
+  }
 }
