@@ -11,6 +11,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { AdminPageComponent} from './admin-page/admin-page.component'; 
 
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path: 'aboutUs', component: AboutUsComponent},
   {path: 'missionStatement', component: MissionStatementComponent},
   {path: 'contactUs', component: ContactUsComponent},
-  {path: 'logIn', component: LogInComponent}
+  {path: 'logIn', component: LogInComponent},
+  {path: 'adminPage', component: AdminPageComponent}
 ];
 
 
