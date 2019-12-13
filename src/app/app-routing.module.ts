@@ -19,11 +19,11 @@ const routes: Routes = [
   {path: 'inventoryPage', component: DashboardInventoryComponent},
   {path: 'archivesPage', component: DashboardArchivesComponent},
   {path: 'settingsPageDashboard', component: DashboardSettingsComponent},
-  {path:'', component: HomePageComponent},
-  {path:'aboutUs', component:AboutUsComponent},
-  {path:'missionStatement',component:MissionStatementComponent},
-  {path:'contactUs',component:ContactUsComponent},
-  {path:'logIn',component:LogInComponent}
+  {path: '', component: HomePageComponent},
+  {path: 'aboutUs', component: AboutUsComponent},
+  {path: 'missionStatement', component: MissionStatementComponent},
+  {path: 'contactUs', component: ContactUsComponent},
+  {path: 'logIn', component: LogInComponent}
 ];
 
 

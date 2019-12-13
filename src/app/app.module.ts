@@ -16,7 +16,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LogInComponent } from './log-in/log-in.component';
-
+import {UserService} from './Services/user.service';
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -33,15 +35,15 @@ import { LogInComponent } from './log-in/log-in.component';
     MissionStatementComponent,
     ContactUsComponent,
     LogInComponent,
-
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
