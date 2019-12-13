@@ -12,7 +12,7 @@ export class UserService {
 
   constructor(private http: HttpClient) {
     // this.usersUrl = 'https://lambertcst438backend.herokuapp.com/users/getAll';
-    this.usersUrl = 'http://localhost:8080';
+    this.usersUrl = 'https://lambertcst438backend.herokuapp.com/employee/getAll';
   }
 
   private static getHeaders(): HttpHeaders {
