@@ -10,7 +10,9 @@ import {EmployeeService} from '../Services/employee.service';
 export class EmployeesPageComponent implements OnInit {
 
   private employees: Employee[];
-  employeeName: string;
+  private employeeName: string;
+  private target = new Employee();
+  private hide = true;
 
   constructor(private employeeService: EmployeeService) {
   }
@@ -29,15 +31,15 @@ export class EmployeesPageComponent implements OnInit {
     const some = this.getEmployeeName();
 
     this.employees.forEach((e) => {
+      // there is no reason for === on this line
+      // tslint:disable-next-line:triple-equals
       if (e.name == some) {
+        this.target.name = e.name;
+        this.target.salary = e.salary;
+        this.hide = false;
       }
     });
 
-    console.log();
     return this.employeeName;
-  }
-
-  findEmployee = () => {
-
   }
 }

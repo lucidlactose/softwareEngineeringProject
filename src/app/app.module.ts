@@ -16,7 +16,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LogInComponent } from './log-in/log-in.component';
-import { UserListComponent } from './user-list/user-list.component';
 import {UserService} from './Services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
@@ -36,7 +35,6 @@ import {FormsModule} from '@angular/forms';
     MissionStatementComponent,
     ContactUsComponent,
     LogInComponent,
-    UserListComponent,
   ],
   imports: [
     BrowserModule,

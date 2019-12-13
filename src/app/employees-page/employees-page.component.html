@@ -36,11 +36,35 @@
 						Employees
 					</div>
 					<div class="panel-body">
-            <form (submit)="onSubmit()" >
+            <form>
               <input [(ngModel)]="employeeName" type="text" placeholder="Find Employee" name="employee" />
-              <button>Submit</button>
+              <button (click)="onSubmit()" type="button">Submit</button>
             </form>
 
+            <!--            /* This is for the displaying a searched item inventory */-->
+
+            <div [hidden]="hide">
+              <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Salary</th>
+                  <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                  <td>{{ target.name }}</td>
+                  <td>{{ target.salary }}</td>
+                  <td>
+                    <button> Delete  </button>
+                    <button> Update </button>
+                  </td>
+                </tbody>
+              </table>
+            </div>
+
+
+<!--            /* This is for the displaying all inventory */-->
             <table class="table table-bordered table-striped">
               <thead class="thead-dark">
               <tr>
