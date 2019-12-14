@@ -1,5 +1,5 @@
 import {Employee} from './employee';
-import {Inventory} from './Inventory';
+import {Inventory} from './inventory';
 
 export interface User {
   name: string;
