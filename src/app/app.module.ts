@@ -19,6 +19,7 @@ import { LogInComponent } from './log-in/log-in.component';
 import {UserService} from './Services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import {FormsModule} from '@angular/forms';
     MissionStatementComponent,
     ContactUsComponent,
     LogInComponent,
+    AdminPageComponent,
   ],
   imports: [
     BrowserModule,
