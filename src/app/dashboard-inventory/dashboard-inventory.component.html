@@ -8,12 +8,14 @@
 	<ul class="navbar-nav mr-auto">
 		<li class ="nav-item">
 				<a class="navbar-brand" routerLink='/profilePage'>Greenbook</a>
-		</li>			
+		</li>
 	</ul>
 	<ul class="navbar-nav ml-auto">
 			<li class ="nav-item">
-				<a class="navbar-brand" routerLink='#'>Logout</a>
-			</li>			
+
+				<a class="navbar-brand" routerLink='/'>Logout</a>
+			</li>
+
 	</ul>
 </nav>
 	<div class="container-fluid main-container">
@@ -33,7 +35,63 @@
 						Inventory
 					</div>
 					<div class="panel-body">
-						<h1>This is Inventory</h1>
+            <form>
+              <input [(ngModel)]="inventoryName" type="text" placeholder="Find Employee" name="employee" />
+              <button (click)="onSubmit()" type="button">Submit</button>
+            </form>
+
+            <!--            /* This is for the displaying a searched item inventory */-->
+
+            <div [hidden]="hide">
+              <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Desc</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Stock</th>
+                  <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                  <td>{{ target.name }}</td>
+                  <td>{{ target.description }}</td>
+                  <td>{{ target.price }}</td>
+                  <td>{{ target.stock }}</td>
+                <td>
+                  <button> Delete  </button>
+                  <button> Update </button>
+                </td>
+                </tbody>
+              </table>
+            </div>
+
+            <!--            /* This is for the displaying all inventory */-->
+
+            <table class="table table-bordered table-striped">
+              <thead class="thead-dark">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Desc</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let inventory of inventory ">
+<!--                <td>{{ inventory.imageURL }}</td>-->
+                <td>{{ inventory.name }}</td>
+                <td>{{ inventory.description }}</td>
+                <td>{{ inventory.price }}</td>
+                <td>{{ inventory.stock }}</td>
+                <td>
+                  <button> Delete  </button>
+                  <button> Update </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
 					</div>
 				</div>
 			</div>
