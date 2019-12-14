@@ -9,7 +9,7 @@ export class EmployeeService {
   private employeeURL: string;
 
   constructor(private http: HttpClient) {
-    this.employeeURL = 'http://localhost:8080';
+    this.employeeURL = 'https://lambertcst438backend.herokuapp.com';
   }
 
   private static getHeaders(): HttpHeaders {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {InventoryService} from '../Services/inventory.service';
 import {Employee} from '../model/employee';
-import {Inventory} from '../model/Inventory';
+import {Inventory} from '../model/inventory';
 
 @Component({
   selector: 'app-dashboard-inventory',
@@ -19,7 +19,7 @@ export class DashboardInventoryComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.inventoryService.getAllEmployees().subscribe((res: Inventory[]) => {
+    this.inventoryService.getAllInventory().subscribe((res: Inventory[]) => {
       this.inventory = res;
     });
   }

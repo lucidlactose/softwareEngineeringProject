@@ -11,8 +11,8 @@ export class UserService {
   private usersUrl: string;
 
   constructor(private http: HttpClient) {
-    // this.usersUrl = 'https://lambertcst438backend.herokuapp.com/users/getAll';
-    this.usersUrl = 'http://localhost:8080';
+    this.usersUrl = 'https://lambertcst438backend.herokuapp.com';
+    // this.usersUrl = 'http://localhost:8080';
   }
 
   private static getHeaders(): HttpHeaders {

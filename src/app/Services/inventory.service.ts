@@ -9,7 +9,7 @@ export class InventoryService {
   private inventoryURL: string;
 
   constructor(private http: HttpClient) {
-    this.inventoryURL = 'http://localhost:8080';
+    this.inventoryURL = 'https://lambertcst438backend.herokuapp.com';
   }
 
   private static getHeaders(): HttpHeaders {
@@ -21,7 +21,7 @@ export class InventoryService {
     });
   }
 
-  public getAllEmployees() {
+  public getAllInventory() {
     return this.http.get(this.inventoryURL + '/inventory/getAll', {headers: InventoryService.getHeaders()});
   }
 }
