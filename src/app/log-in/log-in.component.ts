@@ -23,14 +23,22 @@ export class LogInComponent implements OnInit {
 
   authenticate() {
     this.userService.authenticateUser(this.username, this.password).subscribe(
-      (res: any) => {},
-      (error: any) => {
-        if (error.error.text === 'Logged in.') {
-          if (this.username === 'admin') {
-            this.router.navigateByUrl('/adminPage');
-          }
+      (res: any) => {
+        if ( res != null && !res['admin']) {
           this.router.navigateByUrl('/profilePage');
         }
+        if( res != null && res['admin']){
+          this.router.navigateByUrl('/adminPage');
+        }
+
+        // console.log(res)
+        // this.router.navigateByUrl('/profilePage');
+      // },
+      // (error: any) => {
+
+
+          // this.router.navigateByUrl('/profilePage');
+        // }
       });
   }
 
