@@ -36,10 +36,10 @@ export class DashboardInventoryComponent implements OnInit {
       // tslint:disable-next-line:triple-equals
       if (e.name == some) {
         this.target.name = e.name;
-        this.target.description = e.name;
-        this.target.price = e.name;
-        this.target.stock = e.name;
-        this.target.stock = e.imageURL;
+        this.target.description = e.description;
+        this.target.price = e.price;
+        // this.target.stock = e.stock;
+        this.target.stock = e.stock;
         this.hide = false;
       }
     });
