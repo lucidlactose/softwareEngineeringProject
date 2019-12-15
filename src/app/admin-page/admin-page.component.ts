@@ -16,10 +16,6 @@ export class AdminPageComponent implements OnInit {
   private employees: Employee[];
   private users: User[];
   private inventory: Inventory[];
-  
-
-
- 
 
   constructor(private employeeService: EmployeeService, private inventoryService: InventoryService, private userService: UserService) {
   }
