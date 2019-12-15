@@ -20,6 +20,8 @@ import {UserService} from './Services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { AdminPageComponent } from './admin-page/admin-page.component';
+import { AddEmployeePageComponent } from './add-employee-page/add-employee-page.component';
+import { AddInventoryPageComponent } from './add-inventory-page/add-inventory-page.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
     ContactUsComponent,
     LogInComponent,
     AdminPageComponent,
+    AddEmployeePageComponent,
+    AddInventoryPageComponent,
   ],
   imports: [
     BrowserModule,

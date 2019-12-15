@@ -12,7 +12,8 @@ import { MissionStatementComponent } from './mission-statement/mission-statement
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { AdminPageComponent} from './admin-page/admin-page.component'; 
-
+import { AddEmployeePageComponent } from './add-employee-page/add-employee-page.component';
+import { AddInventoryPageComponent } from './add-inventory-page/add-inventory-page.component';
 
 const routes: Routes = [
   {path: 'profilePage', component: ProfilePageComponent},
@@ -25,7 +26,9 @@ const routes: Routes = [
   {path: 'missionStatement', component: MissionStatementComponent},
   {path: 'contactUs', component: ContactUsComponent},
   {path: 'logIn', component: LogInComponent},
-  {path: 'adminPage', component: AdminPageComponent}
+  {path: 'adminPage', component: AdminPageComponent},
+  {path: 'addEmployee', component: AddEmployeePageComponent},
+  {path: 'addInventory', component: AddInventoryPageComponent}
 ];
 
 
