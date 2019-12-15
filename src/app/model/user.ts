@@ -1,9 +1,13 @@
 import {Employee} from './employee';
 import {Inventory} from './inventory';
 
-export interface User {
+export class User {
   name: string;
   password: string;
-  employeeMap: Employee[];
-  inventoryMap: Inventory[];
+  email: string;
+  employeeMap: any;
+  inventoryMap: any;
+
+  // employeeMap: Employee[];
+  // inventoryMap: Inventory[];
 }
